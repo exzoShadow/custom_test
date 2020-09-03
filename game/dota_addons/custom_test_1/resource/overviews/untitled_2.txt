@@ -1,0 +1,8 @@
+untitled_2
+{
+	material materials/overviews/untitled_2.vmat
+	pos_x -1920
+	pos_y 2048
+	scale 4.000
+}
+
