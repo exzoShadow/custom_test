@@ -1,7 +1,7 @@
 function Spawn(keys)
   print( "test spawn function" )
   -- Wait one frame to do logic on a spawned unit
-  Timers:CreateTimer(.1, function()
+  Timers:CreateTimer(.3, function()
     print( "test CreateTimer function" )
 	--thisEntity.nodraw_on_death = true
   --destination_reached = false
@@ -14,18 +14,18 @@ function Spawn(keys)
     --ParticleManager:SetParticleControl(particle, 3, thisEntity:GetOrigin())
 	
     --for i=1,4 do
-      local waypointName = "path_1"
-      local waypoint = Entities:FindByName(nil, waypointName) 
+      --local waypointName = ""
+      local waypoint = Entities:FindByName(nil, "path_1") 
      --table.insert(waypoints, waypoint)
      --for k,v in ipairs(waypoints) do    print(k,v) end
       ExecuteOrderFromTable({
         UnitIndex = thisEntity:entindex(),
-        OrderType = DOTA_UNIT_ORDER_MOVE_TO_POSITION,
+        OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         TargetIndex = 0, --Optional.  Only used when targeting units
         AbilityIndex = 0, --Optional.  Only used when casting abilities
         Position = waypoint:GetAbsOrigin(), --Optional.  Only used when targeting the ground
         Queue = true
-      --})
+      })
     --end
 
     --thisEntity.waypoints = waypoints

@@ -13,7 +13,7 @@ function GameSetup:init()
     GameRules:SetCustomGameSetupAutoLaunchDelay(0)
     GameRules:SetHeroSelectionTime(10)
     GameRules:SetStrategyTime(1)
-    GameRules:SetPreGameTime(0)
+    GameRules:SetPreGameTime(5)
     GameRules:SetShowcaseTime(0)
     GameRules:SetPostGameTime(5)
     
