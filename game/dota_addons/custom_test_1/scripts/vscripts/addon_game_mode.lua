@@ -22,13 +22,14 @@ require("libraries/timers")
 function Activate()
 	GameRules.AddonTemplate = custom_test1()
 	GameRules.AddonTemplate:InitGameMode()
+	CAITesting:SpawnAIUnitlane()
 end
 
 function custom_test1:InitGameMode()
     print( "Template addon is loaded." )
     
 	GameSetup:init()  
-	CAITesting:SpawnAIUnitlane()
+	
 
     GameRules:GetGameModeEntity():SetThink( "OnThink", self, "GlobalThink", 2 )
     

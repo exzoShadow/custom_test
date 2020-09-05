@@ -163,10 +163,10 @@
 	{
 		// General
 		//----------------------------------------------------------------
-		"vscripts"					"ai/wave_creep.lua"
+		//"vscripts"					"ai/wave_creep.lua"
 
 		"Model"						"models/creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll_frost.vmdl"	// Model.
-		"BaseClass"					"npc_dota_creature"
+		"BaseClass"					"npc_dota_creep"
 		"SoundSet"					"n_creep_Ranged"
 		"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
 		"Level"						"1"
